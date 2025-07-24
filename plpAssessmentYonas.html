@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set meta tag -->
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Professional Registration Page</title>
+    <style type="text/css">
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .form-section, .table-section {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: -10px;
+        }
+        input, button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2c3e50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1a252f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .external-link {
+            text-align: center;
+            margin: 20px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Heading and paragraph -->
+        <section>
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px;">About Us</h2>
+            <p>We are a company dedicated to providing excellent services to our customers. Register below to join our community and access exclusive benefits.</p>
+        </section>
+
+        <!-- Container for form and table -->
+        <div class="container">
+            <!-- Registration form -->
+            <section class="form-section">
+                <h2 style="color: #2c3e50; margin-top: 0;">Registration Form</h2>
+                <form action="#" method="post">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+
+            <!-- User information table -->
+            <section class="table-section">
+                <h2 style="color: #2c3e50; margin-top: 0;">User Information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Biniyam Tamru</td>
+                            <td>biniyamtamru.com</td>
+                            <td>+251933043245</td>
+                        </tr>
+                        <tr>
+                            <td>Kalkidan Tibebu</td>
+                            <td>jkalkidan@gmail.com</td>
+                            <td>+251910027807</td>
+                        </tr>
+                        <tr>
+                            <td>YonasGetaw</td>
+                            <td>yonasgetaw5444@gmail.com</td>
+                            <td>0954447749</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- Image section -->
+        <div class="image-container">
+            <img src="./image.png" alt="Company Image">
+        </div>
+
+        <!-- External link -->
+        <div class="external-link">
+            <p>For more information, visit our partner site: <a href="https://google.com" target="_blank">Google</a></p>
+        </div>
+    </main>
+</body>
+</html>
